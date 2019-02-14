@@ -13,5 +13,12 @@ elif (
     ):
     print(f"You lost! {compChoice} beats {playerChoice}. Try again?")
 
-else:
+elif (
+    (playerChoice == 'rock') or 
+    (playerChoice == 'paper') or 
+    (playerChoice == 'scissors')
+    ):
     print(f"You won! {playerChoice} beats {compChoice}.")
+
+else:
+    print("\nPlease enter a valid choice!")
